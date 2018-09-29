@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SolarLab.AppServices\SolarLab.AppServices.csproj" />
+    <ProjectReference Include="..\SolarLab.Domain.Data\SolarLab.Domain.Data.csproj" />
+    <ProjectReference Include="..\SolarLab.Domain\SolarLab.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,45 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Proj/Services Tier/SolarLab.AppServices/bin/Debug/netcoreapp2.0
+/Proj/ConsoleUI/ClientConsole/obj/Debug/netcoreapp2.0
+/Proj/ConsoleUI/ClientConsole/obj
+/Proj/ConsoleUI/ClientConsole/bin/Debug/netcoreapp2.0
+/Proj/Services Tier/SolarLab.AppServices/obj/Debug/netcoreapp2.0
+/Proj/Services Tier/SolarLab.ComponentRegistrar/bin/Debug/netcoreapp2.0
+/Proj/Services Tier/SolarLab.ComponentRegistrar/obj/Debug/netcoreapp2.0
+/Proj/Services Tier/SolarLab.Domain/bin/Debug/netcoreapp2.0
+/Proj/Services Tier/SolarLab.Domain/obj/Debug/netcoreapp2.0
+/Proj/Services Tier/SolarLab.Domain.Data/bin/Debug/netcoreapp2.0
+/Proj/Services Tier/SolarLab.Domain.Data/obj/Debug/netcoreapp2.0
+/Proj/Services Tier/Tests/bin/Debug/netcoreapp2.0
+/Proj/Services Tier/Tests/obj/Debug/netcoreapp2.0
+/Proj/Services Tier/Tests/obj
+/Proj/Services Tier/WebApiServices/bin/Debug/netcoreapp2.0
+/Proj/Services Tier/WebApiServices/obj/Debug/netcoreapp2.0
+/Proj/.vs/SolarLabTestExample/v15/Server/sqlite3
+/Proj/ApiService/obj/Debug/netcoreapp2.0
+/Proj/ApiService/obj/Release/netcoreapp2.0
+/Proj/Services Tier/SolarLab.AppServices/obj/Release/netcoreapp2.0
+/Proj/Services Tier/SolarLab.AppServices/obj
+/Proj/Services Tier/SolarLab.ComponentRegistrar/obj/Release/netcoreapp2.0
+/Proj/Services Tier/SolarLab.ComponentRegistrar/obj
+/Proj/Services Tier/SolarLab.Domain/obj/Release/netcoreapp2.0
+/Proj/Services Tier/SolarLab.Domain/obj
+/Proj/Services Tier/SolarLab.Domain.Data/obj/Release/netcoreapp2.0
+/Proj/Services Tier/SolarLab.Domain.Data/obj
+/Proj/Services Tier/WebApiServices/obj/Release/netcoreapp2.0
+/Proj/Services Tier/WebApiServices/obj
+/Proj/Services Tier/SolarLab.WebApi.Contracts/obj
+/Proj/Services Tier/SolarLab.WebApi.Contracts/bin/Debug/netcoreapp2.0
+/Proj/WebUI/obj/Debug/netcoreapp2.2
+/Proj/WebUI/obj
+/*.zip
+/Proj/*.doc
+*.mdf
+*.ldf
+.vs
+/Proj/.vs
+Архитектура
+/*.txt
