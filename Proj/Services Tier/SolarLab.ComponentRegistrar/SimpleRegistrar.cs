@@ -17,8 +17,6 @@ namespace SolarLab.ComponentRegistrar
             container.Register<RepositoryBase<Advert>, AdvertRepository>();
             container.Register<RepositoryBase<Board>, BoardRepository>();
             container.Register<AdsDbContext>(ScopedLifestyle.Scoped);
-
-
         }
     }
 }

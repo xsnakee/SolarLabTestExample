@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SolarLab.Domain;
 
 namespace SolarLab.Domain.Migrations
 {
     [DbContext(typeof(AdsDbContext))]
-    partial class AdsDbContestModelSnapshot : ModelSnapshot
+    [Migration("20181002093951_reconnect_to_new_db")]
+    partial class reconnect_to_new_db
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
