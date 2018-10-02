@@ -1,5 +1,6 @@
 ﻿using SolarLab.Domain;
 using SolarLab.Domain.Data.Repositories.Base;
+using SolarLab.Domain.RepositoryInterfaces;
 using SolarLab.WebApi.Contracts.Dto;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,15 +12,15 @@ namespace SolarLab.AppServices
     /// </summary>
     public class AdvertService : IAdvertService
     {
-        public AdvertService(RepositoryBase<Advert> advertRepository)
+        public AdvertService(IAdvertRepository advertRepository)
         {
             _advertRepository = advertRepository;
         }
-                /// <summary>
+        /// <summary>
         /// Репозиторий по работе с объявлениями
         /// </summary>
-        protected readonly RepositoryBase<Advert> _advertRepository;
-        
+        protected readonly IAdvertRepository _advertRepository;
+
         /// <summary>
         /// Получает все комментарии к объвлению
         /// </summary>

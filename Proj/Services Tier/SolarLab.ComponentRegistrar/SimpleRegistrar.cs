@@ -3,7 +3,7 @@ using SimpleInjector;
 using SolarLab.AppServices;
 using SolarLab.Domain;
 using SolarLab.Domain.Data.Repositories;
-using SolarLab.Domain.Data.Repositories.Base;
+using SolarLab.Domain.RepositoryInterfaces;
 
 namespace SolarLab.ComponentRegistrar
 {
@@ -14,8 +14,8 @@ namespace SolarLab.ComponentRegistrar
         {
             container.Register<IAdvertService, AdvertService>();
             container.Register<IBoardService, BoardService>();
-            container.Register<RepositoryBase<Advert>, AdvertRepository>();
-            container.Register<RepositoryBase<Board>, BoardRepository>();
+            container.Register<IAdvertRepository, AdvertRepository>();
+            container.Register<IBoardRepository, BoardRepository>();
             container.Register<AdsDbContext>(ScopedLifestyle.Scoped);
         }
     }

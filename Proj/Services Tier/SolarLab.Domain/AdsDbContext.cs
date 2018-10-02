@@ -14,7 +14,7 @@ namespace SolarLab.Domain
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var ConnectionString = "Server=(localdb)\\MSSQLLocalDB;Database=C:\\USERS\\NIKOLAY\\SOURCE\\REPOS\\SOLARLAB\\PROJ\\SERVICES TIER\\SOLARLAB.DOMAIN.DATA\\ADVERTDB.MDF;user id=Generalov;password=1111;";
+            var ConnectionString = "Server=(localdb)\\MSSQLLocalDB;Database=C:\\USERS\\NIKOLAY\\SOURCE\\REPOS\\SOLARLAB\\PROJ\\SERVICES TIER\\SOLARLAB.DOMAIN.DATA\\ADVERTDB.MDF;Trusted_connection = True";
             //"Server=BOND-LAPTOP;Database=SolarlabAds;user id=solarlabUser;password=solarlabUser;MultipleActiveResultSets=True;"
             
             optionsBuilder.UseSqlServer(ConnectionString);

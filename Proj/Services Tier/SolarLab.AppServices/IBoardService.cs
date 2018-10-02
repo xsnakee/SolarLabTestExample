@@ -1,6 +1,7 @@
 ﻿using SolarLab.Domain;
 using SolarLab.WebApi.Contracts.Dto;
 using System.Collections.Generic;
+using System.Runtime;
 
 namespace SolarLab.AppServices
 {

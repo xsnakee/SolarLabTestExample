@@ -1,11 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SolarLab.Domain.Data.Repositories.Base;
+using SolarLab.Domain.RepositoryInterfaces;
 using System;
 using System.Collections.Generic;
 
 namespace SolarLab.Domain.Data.Repositories
 {
-    public class AdvertRepository : RepositoryBase<Advert>
+    public class AdvertRepository : RepositoryBase<Advert>, IAdvertRepository
     {
         public AdvertRepository(AdsDbContext dbContext) : base(dbContext)
         {

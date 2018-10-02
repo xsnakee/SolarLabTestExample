@@ -9,12 +9,14 @@ namespace WebApiServices.Controllers
     [Route("api/[controller]")]
     public class BoardsController : Controller
     {
-        public BoardsController(IBoardService boardService)
+        public BoardsController(IAdvertService advertService, IBoardService boardService)
         {
             _boardService = boardService;
+            _advertService = advertService;
         }
 
         protected readonly IBoardService _boardService;
+        protected readonly IAdvertService _advertService;
 
 
         // GET api/values

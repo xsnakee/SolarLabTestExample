@@ -1,8 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SolarLab.Domain.Entities.Base;
-using System;
+﻿using SolarLab.Domain.Entities.Base;
 using System.Collections.Generic;
-using System.Text;
 
 namespace SolarLab.Domain.RepositoryInterfaces.Base
 {

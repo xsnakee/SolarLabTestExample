@@ -1,5 +1,6 @@
 ﻿using SolarLab.Domain;
 using SolarLab.Domain.Data.Repositories.Base;
+using SolarLab.Domain.RepositoryInterfaces;
 using SolarLab.WebApi.Contracts.Dto;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace SolarLab.AppServices
     /// </summary>
     public class BoardService : IBoardService
     {
-        public BoardService(RepositoryBase<Board> boardRepository, RepositoryBase<Advert> advertRepository)
+        public BoardService(IBoardRepository boardRepository, IAdvertRepository advertRepository)
         {
             _boardRepository = boardRepository;
             _advertRepository = advertRepository;
@@ -19,8 +20,8 @@ namespace SolarLab.AppServices
                 /// <summary>
         /// Репозиторий по работе с объявлениями
         /// </summary>
-        protected readonly RepositoryBase<Board> _boardRepository;
-        protected readonly RepositoryBase<Advert> _advertRepository;
+        protected readonly IBoardRepository _boardRepository;
+        protected readonly IAdvertRepository _advertRepository;
         
         /// <summary>
         /// Получает все объвления из раздела

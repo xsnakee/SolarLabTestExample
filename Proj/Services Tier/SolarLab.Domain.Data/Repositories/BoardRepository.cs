@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using SolarLab.Domain.Data.Repositories.Base;
+using SolarLab.Domain.RepositoryInterfaces;
 
 namespace SolarLab.Domain.Data.Repositories
 {
-    public class BoardRepository : RepositoryBase<Board>
+    public class BoardRepository : RepositoryBase<Board>, IBoardRepository
     {
 
         public BoardRepository(AdsDbContext dbContext) : base(dbContext)
